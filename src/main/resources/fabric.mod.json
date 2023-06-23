@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "better-cherry-blossoms",
+	"version": "${version}",
+	"name": "Better cherry blossoms",
+	"description": "This is Better Cherry blossoms",
+	"authors": [
+		"publichealth"
+	],
+	"contact": {
+		"homepage": "https://space.bilibili.com/1582724340",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/better-cherry-blossoms/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.publichealth.BettercherryblossomsMod"
+		],
+		"fabric-datagen": [
+			"name.publichealth.BettercherryblossomsModDataGenerator"
+		]
+	},
+	"mixins": [
+		"better-cherry-blossoms.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
